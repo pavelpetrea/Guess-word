@@ -1,0 +1,91 @@
+body{
+    text-align: center;
+    font-family: Consolas;
+    background-color: rgb(241, 241, 241);
+    margin-top: 4%;
+}
+footer:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer{
+    font-weight: bold;
+    margin-top: 23%;
+    font-family: 'Bahnschrift SemiBold';
+}
+#guessInput{
+    font-size:xx-large;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    border-radius: 50px;
+    margin-left: 12px;
+    padding: 10px;
+}
+.guessWord{
+    color: rgb(122, 102, 74);
+    font-size: xxx-large;
+}
+.guessWord:hover{
+    cursor: default;
+    color: rgb(87, 76, 57);
+}
+#heart:hover{
+    cursor: default;
+}
+#chances{
+    text-align: right;
+    font-family: 'Bahnschrift SemiBold';
+    color: rgb(82, 70, 54);
+    padding-left: 60%;
+}
+#chances:hover{
+    cursor: default;
+    color: rgb(87, 76, 57);
+}
+img{
+   width: 300px;
+   height: auto;
+   left: 50%;
+}
+button{
+    margin-left: 12px;
+    margin-top: 5px;
+    background-color: rgb(122, 102, 74);
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(102, 90, 70);
+}
+#reveal{
+    font-size:xx-large;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    border-radius: 50px;
+    
+}
+.underline{
+    display: inline-block;
+   
+    margin-right: 5px;
+}
+#message{
+    font-weight: bold;
+    margin-top: 20px;
+}
+.hidden{
+    display: none;
+}
+#lives {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#wordContainer{
+    font-size: xx-large;
+    padding-bottom: 10px;
+}
+#wordContainer:hover{
+    cursor: default;
+}
