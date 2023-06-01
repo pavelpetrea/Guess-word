@@ -9,21 +9,21 @@ let word = options[Math.floor(Math.random() * options.length)];
         let guessButton = document.getElementById("guessButton");
         let message = document.getElementById("message");
 
-        for (var i = 0; i < word.length; i++) {
-            var span = document.createElement("span");
+        for (let i = 0; i < word.length; i++) {
+            let span = document.createElement("span");
             span.className = "underline";
             wordContainer.appendChild(span);
             span.textContent = "_";
         }
         guessButton.addEventListener("click", function() {
-            var guess = guessInput.value.toLowerCase();
+            let guess = guessInput.value.toLowerCase();
             guessInput.value = "";
             if (guess.length === 1 && /^[a-z]$/.test(guess)) {
                 if (guessedLetters.includes(guess)) {
                     message.textContent = "You've already guessed this letter.";
                 } else if (word.includes(guess)) {
                     guessedLetters.push(guess);
-                    for (var i = 0; i < word.length; i++) {
+                    for (let i = 0; i < word.length; i++) {
                         if (word[i] === guess) {
                             let spans = wordContainer.getElementsByTagName("span");
                             spans[i].textContent = guess;
@@ -53,15 +53,12 @@ let word = options[Math.floor(Math.random() * options.length)];
         function endGame(hasWon) {
             guessInput.disabled = true;
             guessButton.disabled = true;
-        
             if (hasWon) {
                 message.textContent = "Congrats! You've won!";
                 message.style.color = "green";
             } else {
-                message.textContent = "You've won! The word was: " + word;
+                message.textContent = "You've lost! The word was: " + word;
                 message.style.color = "red";
             }
-        
             message.classList.remove("hidden");
         }
-        
